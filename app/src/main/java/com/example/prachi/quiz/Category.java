@@ -1,9 +1,9 @@
 package com.example.prachi.quiz;
 
 public class Category {
-    public static final int PROGRAMMING = 1;
-    public static final int GEOGRAPHY = 2;
-    public static final int MATH = 3;
+    public static final int CPP = 1;
+    public static final int JAVA = 2;
+    public static final int Python = 3;
 
     private int id;
     private String name;

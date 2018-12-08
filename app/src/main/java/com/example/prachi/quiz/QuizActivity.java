@@ -1,4 +1,4 @@
-package com.example.prachi.quiz;
+ package com.example.prachi.quiz;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -176,7 +176,7 @@ public class QuizActivity extends AppCompatActivity {
         String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
         TextViewCountDown.setText(timeFormatted);
         if (timeLeftInMillis < 10000) {
-            TextViewCountDown.setTextColor(Color.BLUE);
+            TextViewCountDown.setTextColor(Color.RED);
         } else {
             TextViewCountDown.setTextColor(textColorDefaultCd);
         }

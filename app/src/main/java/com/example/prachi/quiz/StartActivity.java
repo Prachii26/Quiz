@@ -57,7 +57,7 @@ public class StartActivity extends AppCompatActivity {
         String categoryName = selectedCategory.getName();
         String difficulty=spinnerDifficulty.getSelectedItem().toString();
 
-        Intent intent= new Intent(StartActivity.this,QuizActivity.class);
+       Intent intent= new Intent(StartActivity.this,QuizActivity.class);
         intent.putExtra(EXTRA_CATEGORY_ID, categoryID);
         intent.putExtra(EXTRA_CATEGORY_NAME, categoryName);
         intent.putExtra(EXTRA_DIFFICULTY,difficulty);

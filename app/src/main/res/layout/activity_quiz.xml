@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E0FFFF"
+    android:background="@drawable/g"
    android:padding="16dp"
     tools:context=".QuizActivity">
 <TextView
@@ -14,14 +14,14 @@
     android:layout_height="wrap_content"
     android:text="Score:0"
     android:textSize="15dp"
-    android:textColor="@android:color/holo_red_dark"
+    android:textColor="#ffffff"
     android:freezesText="true"/>
     <TextView
         android:id="@+id/question_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Question : 1/x"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="#ffffff"
         android:layout_below="@+id/view_score"
         android:textSize="15dp"
         android:freezesText="true"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Category: "
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="#ffffff"
         android:layout_below="@+id/question_count"
         android:textSize="15dp"
         android:freezesText="true"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Difficulty: "
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="#ffffff"
         android:layout_below="@+id/text_view_category"
         android:textSize="15dp"
         android:freezesText="true"
@@ -51,59 +51,79 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        android:textColor="#FF4500"
+        android:textColor="#ffffff"
         android:text="00:30"
         android:freezesText="true"
         android:layout_alignParentEnd="true"        />
+
     <TextView
-        android:textColor="#FF4500"
+        android:id="@+id/view_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sdasfsadfasdfzdcvsdsdadfadf\nasscscsdsddffafffzasfdfdsfdf\nvddsvdvdfasdfasdfasdfadf "
-        android:textSize="18dp"
-        android:id="@+id/view_question"
-        android:layout_above="@id/radio_group"
-        android:layout_marginBottom="20dp"
+        android:layout_below="@id/text_view_difficulty"
+
+        android:layout_alignEnd="@+id/countdown"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="1dp"
+        android:freezesText="true"
+        android:text="sdasfsadfasdfzdcvsdsdadfadf\nasscscsdsddffafffzasfdfd \nasdfsafsefefefefaefadsf\nsdasfsafasferfearf"
         android:textAlignment="center"
-        android:freezesText="true"
-        />
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
     <RadioGroup
-        android:freezesText="true"
+        android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radio_group"
-        android:layout_centerVertical="true">
+        android:layout_alignStart="@+id/view_score"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="290dp"
+        android:freezesText="true">
+
         <RadioButton
             android:id="@+id/rb1"
-            android:freezesText="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_dark"
-            android:text="Option 1"/>
+            android:layout_alignStart="@+id/radio_group"
+            android:layout_alignBottom="@+id/radio_group"
+            android:freezesText="true"
+            android:text="Option 1"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignStart="@+id/radio_group"
+            android:freezesText="true"
             android:text="Option 2"
-            android:freezesText="true"
-            />
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <RadioButton
-            android:freezesText="true"
             android:id="@+id/rb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_dark"
-            android:text="Option 3"/>
+            android:layout_alignStart="@+id/radio_group"
+            android:freezesText="true"
+            android:text="Option 3"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/confirm_next"
-        android:freezesText="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm"
-        android:layout_below="@+id/radio_group"
-        android:layout_marginTop="16dp"/>
+        android:layout_alignEnd="@+id/countdown"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:freezesText="true"
+        android:text="Confirm" />
 </RelativeLayout>
